@@ -1,7 +1,12 @@
 # Xingyu Chen
 
 CV&AI Research at Y-tech, Kuaishou Technology
-<br/>[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl), 
+
+<p align="left">
+<img src="./img/photo.jpg" width="224" height="">
+</p>
+
+[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl), 
 [CV in English](), 
 [CV in Chinese](), 
 [Github](https://github.com/SeanChenxy)
