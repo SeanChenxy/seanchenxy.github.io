@@ -1,8 +1,5 @@
 # Xingyu Chen
 
-<p align="left">
-<img src="./img/photo.jpg" width="224" height="">  
-<p>
 
 CV&AI Research at Y-tech, Kuaishou Technology
 <br/>[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl)
