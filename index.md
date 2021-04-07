@@ -4,10 +4,10 @@
 <img src="./img/photo.jpg" width="224" height="">  
 <p>
 
-<br/>CV&AI Research at Y-tech, Kuaishou Technology</br>
-<br/>[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl)</br>
-<br/>[CV in English]()</br>
-<br/>[CV in Chinese]()</br>
+CV&AI Research at Y-tech, Kuaishou Technology
+<br/>[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl)
+[CV in English]()
+[CV in Chinese]()
 <br/>[Github](https://github.com/SeanChenxy)</br>
 
 ### Research Interests
@@ -70,3 +70,41 @@ Xingyu Chen, Yue Lu, Zhengxing Wu, Junzhi Yu, and Li Wen.
 Xingyu Chen, Zhengxing Wu, Junzhi Yu, and Li Wen.
 [arXiv](https://arxiv.org/pdf/1912.10406.pdf)
 
+
+## Welcome to GitHub Pages
+
+You can use the [editor on GitHub](https://github.com/SeanChenxy/seanchenxy.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SeanChenxy/seanchenxy.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
