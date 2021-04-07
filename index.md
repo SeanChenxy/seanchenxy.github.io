@@ -5,11 +5,14 @@
 <p>
 
 
-##### CV&AI Research at Y-tech, Kuaishou Technology
+CV&AI Research at Y-tech, Kuaishou Technology
 
 [Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl)
+
 [CV in English]()
+
 [CV in Chinese]()
+
 [Github](https://github.com/SeanChenxy)
 
 ### Research Interests
