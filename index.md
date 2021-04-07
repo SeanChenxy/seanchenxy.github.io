@@ -4,16 +4,11 @@
 <img src="./img/photo.jpg" width="224" height="">  
 <p>
 
-
-CV&AI Research at Y-tech, Kuaishou Technology
-
-[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl)
-
-[CV in English]()
-
-[CV in Chinese]()
-
-[Github](https://github.com/SeanChenxy)
+<br/>CV&AI Research at Y-tech, Kuaishou Technology</br>
+<br/>[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl)</br>
+<br/>[CV in English]()</br>
+<br/>[CV in Chinese]()</br>
+<br/>[Github](https://github.com/SeanChenxy)</br>
 
 ### Research Interests
 
@@ -22,6 +17,7 @@ Object detection, tracking, 3D human/object/scene understanding.
 ### News
 
 **2021/3/1** Had one paper accepted by CVPR 2021 about monocular hand reconstruction.
+
 **2021/3/1** Our book [Visual Perception and Control of Underwater Robots](https://www.routledge.com/Visual-Perception-and-Control-of-Underwater-Robots/Yu-Chen-Kong/p/book/9780367695781) was published .
 
 ### Publications (Selected)
