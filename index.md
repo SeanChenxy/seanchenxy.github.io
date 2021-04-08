@@ -30,11 +30,11 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 <img align="left" src="img/logo_Kuaishou.png" width="100"> 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Jul. 2020 ~ Present
 
 <img align="left" src="img/logo_IA.jpg" width="200"> 
 
-&emsp; Ph.D., [Institute of Automation Chinese Academy of Sciences](http://english.ia.cas.cn/)
+&emsp; Ph.D., [Institute of Automation Chinese Academy of Sciences](http://english.ia.cas.cn/) &emsp; Sep. 2015 ~ Jul. 2020
 
 
 
