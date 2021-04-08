@@ -12,8 +12,7 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 <br/> &emsp;Chengdu University of Technology in 2015.
 
 &emsp;[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl), 
-[CV in English](), 
-[CV in Chinese](), 
+[CV](https://drive.google.com/drive/folders/1WSxGNGf9ZMyYit4Lz_5BI8u58FIfa_MP?usp=sharing), 
 [Github](https://github.com/SeanChenxy),
 [Zhihu](https://www.zhihu.com/people/chen-xing-yu-62-89)
 
