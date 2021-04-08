@@ -6,7 +6,8 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 
 &emsp;I'm currently a Researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
 <br/> &emsp;I obtained my Ph.D. in Automation Science from Institute of Automation, 
-<br/> &emsp;Chinese Academy of Science in 2020, under the supervision of Prof. Junzhi Yu. Previously I received my B.S. in Electrical Engineering and Automation from Chengdu University of Technology in 2015.
+<br/> &emsp;Chinese Academy of Science in 2020, under the supervision of Prof. Junzhi 
+<br/> &emsp;Yu. Previously I received my B.S. in Electrical Engineering and Automation from Chengdu University of Technology in 2015.
 
 &emsp;[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl), 
 [CV in English](), 
