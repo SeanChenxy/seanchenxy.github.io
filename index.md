@@ -31,7 +31,7 @@ I have been focusing on object detection/tracking for underwater robotics since 
 <img align="left" src="img/logo_Kuaishou.png" width="190"> 
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/) 
-<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;Jul. 2020 ~ Present
+<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jul. 2020 ~ Present
 
 <img align="left" src="img/logo_IA.jpg" width="300"> 
 
