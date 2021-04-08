@@ -11,10 +11,10 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 <br/> &emsp;Previously I received my B.S. in Electrical Engineering and Automation from
 <br/> &emsp;Chengdu University of Technology in 2015.
 
-&emsp;[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl), 
-[CV](https://drive.google.com/drive/folders/1WSxGNGf9ZMyYit4Lz_5BI8u58FIfa_MP?usp=sharing), 
-[Github](https://github.com/SeanChenxy),
-[Zhihu](https://www.zhihu.com/people/chen-xing-yu-62-89)
+&emsp;[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl) /
+&emsp;[CV](https://drive.google.com/drive/folders/1WSxGNGf9ZMyYit4Lz_5BI8u58FIfa_MP?usp=sharing) /
+&emsp;[Github](https://github.com/SeanChenxy) / 
+&emsp;[Zhihu](https://www.zhihu.com/people/chen-xing-yu-62-89)
 
 <br/>
 ### Research Interests
