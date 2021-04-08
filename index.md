@@ -1,10 +1,11 @@
 # Xingyu Chen
 
 CV&AI Researcher at Y-tech, Kuaishou Technology
+<br/>Email: chenxy.sean@gmail.com 
 
 <img align="left" src="./img/photo.jpg" width="180" height="">
 
-&emsp;I'm currently a Researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
+&emsp;I'm currently a researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
 <br/> &emsp;I obtained my Ph.D. in Automation from Institute of Automation, Chinese 
 <br/> &emsp;Academy of Science in 2020, under the supervision of Prof. [Junzhi Yu](https://scholar.google.com/citations?user=Gudfky4AAAAJ&hl=en). 
 <br/> &emsp;Previously I received my B.S. in Electrical Engineering and Automation from
@@ -88,4 +89,25 @@ in *TIE*
 <br/>Xingyu Chen, Zhengxing Wu, Junzhi Yu, and Li Wen.
 <br/>[arXiv](https://arxiv.org/pdf/1912.10406.pdf)
 
+
+### Honors
+<center class="half">
+    <img src="./img/ytech20.jpg" width="300"/><img src="./img/time_messager.jpg" width="200"/><img src="./img/cyber.jpg" width="300"/>
+</center>
+<center class="half">
+    <img src="./img/urpc18.jpg" width="200"/><img src="./img/urpc19.jpg" width="210"/><img src="./img/dean.jpg" width="300"/>
+</center>
+
+### Service
+A reviewer for MM21, CVPR21, ICRA20, IROS20, ICRA19, IROS19, TCYB, TCSVT, and so on.
+
+### Hobby
+
+<p align="center">
+<img src="./img/zelda.jpg" width="300" height="">
+</p>
+
+I love to play Nintendo Switch. Zelda is my favorite games, and I am skilled at playing PES and NBA 2K.
+<br/>I’m also interested in making music with guitar. See my [podcast]( https://music.163.com/#/radio?id=794486541) in NetEase Music.
+<br/>My record for the 1000-meter freestyle swim reaches 27'08''.
 
