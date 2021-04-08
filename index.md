@@ -5,8 +5,8 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 <img align="left" src="./img/photo.jpg" width="200" height="">
 
 &emsp;I'm currently a Researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
-<br/> &emsp;I obtained my Ph.D. in Automation from Institute of Automation, 
-<br/> &emsp;Chinese Academy of Science in 2020, under the supervision of Prof. [Junzhi Yu](https://scholar.google.com/citations?user=Gudfky4AAAAJ&hl=en). 
+<br/> &emsp;I obtained my Ph.D. in Automation from Institute of Automation, Chinese 
+<br/> &emsp;Academy of Science in 2020, under the supervision of Prof. [Junzhi Yu](https://scholar.google.com/citations?user=Gudfky4AAAAJ&hl=en). 
 <br/> &emsp;Previously I received my B.S. in Electrical Engineering and Automation from
 <br/> &emsp;Chengdu University of Technology in 2015.
 
@@ -15,7 +15,7 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 [CV in Chinese](), 
 [Github](https://github.com/SeanChenxy)
 
-<br/>
+
 ### Research Interests
 
 I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. My reseach interests lie in the joint field of robotics and computer vision, including but not limited to scene perception, 3D human/object/scene understanding, and human-machine interaction.
