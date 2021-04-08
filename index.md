@@ -4,9 +4,9 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 
 <img align="left" src="./img/photo.jpg" width="200" height="">
 
-&emsp;I'm currently a Researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
-&emsp;I obtained my Ph.D. in Automation Science from Institute of Automation, Chinese Academy of Science in 2020, under the supervision of Prof. Junzhi Yu. 
-&emsp;Previously I received my B.S. in Electrical Engineering and Automation from Chengdu University of Technology in 2015.
+<br/> &emsp;I'm currently a Researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
+<br/> &emsp;I obtained my Ph.D. in Automation Science from Institute of Automation, Chinese Academy of Science in 2020, under the supervision of Prof. Junzhi Yu. 
+<br/> &emsp;Previously I received my B.S. in Electrical Engineering and Automation from Chengdu University of Technology in 2015.
 
 &emsp;[Google Scholar](https://scholar.google.com/citations?user=YurWtIEAAAAJ&hl), 
 [CV in English](), 
@@ -27,7 +27,7 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 <img align="left" src="img/logo_Kuaishou.png" width="100"> 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/)
 
 <img align="left" src="img/logo_IA.jpg" width="200"> 
 
