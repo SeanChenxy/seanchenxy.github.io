@@ -1,6 +1,6 @@
 # Xingyu Chen
 
-CV&AI Research at Y-tech, Kuaishou Technology
+CV&AI Researcher at Y-tech, Kuaishou Technology
 
 <p align="left">
 <img src="./img/photo.jpg" width="224" height="">
@@ -11,14 +11,31 @@ CV&AI Research at Y-tech, Kuaishou Technology
 [CV in Chinese](), 
 [Github](https://github.com/SeanChenxy)
 
+### Info
+
+I'm currently a Researcher at Y-tech, Kuaishou Technology (Kwai Inc.). I obtained my Ph.D. in Automation Science from Institute of Automation, Chinese Academy of Science in 2020, under the supervision of Prof. Junzhi Yu. Previously I received my B.S. in Electrical Engineering and Automation from Chengdu University of Technology in 2015.
+
 ### Research Interests
 
-Object detection, tracking, 3D human/object/scene understanding.
+I have been focusing on **object detection/tracking** for underwater robotics since I started my PhD in 2015. My reseach interests lie in the joint field of robotics and computer vision, including but not limited to scene perception, 3D human/object/scene understanding, and human-machine interaction.
 
 ### News
 
 **2021/3/1** Had one paper accepted by CVPR 2021 about monocular hand reconstruction.
 <br/>**2021/3/1** Our book [Visual Perception and Control of Underwater Robots](https://www.routledge.com/Visual-Perception-and-Control-of-Underwater-Robots/Yu-Chen-Kong/p/book/9780367695781) was published .
+
+### Experience
+
+<img align="left" src="img/logo_Kuaishou.png" width="100"> 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/)
+
+<img align="left" src="img/logo_IA.jpg" width="200"> 
+
+&emsp; Ph.D., [Institute of Automation Chinese Academy of Sciences](http://english.ia.cas.cn/)
+
+
+
 
 ### Publications (Selected)
 
@@ -34,17 +51,17 @@ in *CVPR21*
 <p align="left">
 <img src="./img/tdrn.jpg" width="672" height="">
 </p>
-in *TCSVT21*
+in *TCSVT*
 <br/>Xingyu Chen, Junzhi Yu, Shihan Kong, Zhengxing Wu, and Li Wen.
 <br/>[arXiv](https://arxiv.org/pdf/1807.08638.pdf), [Github](https://github.com/SeanChenxy/TDRN)
 
 **A Soft Manipulator for Efficient Delicate Grasping in Shallow Water: Modeling, Control, and Real-World experiments**
-<br/>in *IJRR20*
+<br/>in *IJRR*
 <br/>Zheyuan Gong , Xi Fang , Xingyu Chen, et al.
 <br/>[paper](https://softrobotics.buaa.edu.cn/Download/2020/2020-IJRR-Gongzheyuan.pdf)
 
 **Temporally identity-aware SSD with attentional LSTM**
-<br/>in *TCYB20*
+<br/>in *TCYB*
 <br/>Xingyu Chen, Junzhi Yu, and Zhengxing Wu.
 <br/>[arXiv](https://arxiv.org/pdf/1803.00197.pdf), [Github](https://github.com/SeanChenxy/TSSD-OTA)
 
@@ -52,7 +69,7 @@ in *TCSVT21*
 <p align="left">
 <img src="./img/ganrs.gif" width="672" height="200">
 </p>
-in *TIE19*
+in *TIE*
 <br/>Xingyu Chen, Junzhi Yu, Shihan Kong, Zhengxing Wu, Xi Fang, and Li Wen.
 <br/>[arXiv](https://arxiv.org/pdf/1712.00736.pdf), [Github](https://github.com/SeanChenxy/GAN_RS)
 
@@ -66,3 +83,5 @@ in *TIE19*
 **Rethinking Temporal Object Detection from Robotic Perspectives**
 <br/>Xingyu Chen, Zhengxing Wu, Junzhi Yu, and Li Wen.
 <br/>[arXiv](https://arxiv.org/pdf/1912.10406.pdf)
+
+
