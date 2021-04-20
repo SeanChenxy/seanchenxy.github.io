@@ -94,7 +94,10 @@ in *TIE*
     <img src="./img/ytech20.jpg" width="300"/><img src="./img/time_messager.jpg" width="200"/><img src="./img/cyber.jpg" width="300"/>
 </center>
 <center class="half">
-    <img src="./img/urpc19.jpg" width="213"/><img src="./img/urpc18.jpg" width="200"/><img src="./img/dean.jpg" width="300"/>
+    <img src="./img/urpc19.jpg" width="213"/><img src="./img/urpc18.jpg" width="200"/><img src="./img/baosteel.jpg" width="170"/>
+</center>
+<center class="half">
+    <img src="./img/tanglixin.jpg" width="234"/><img src="./img/dean.jpg" width="231"/><img src="./img/zhuliyuehua.jpg" width="230"/>
 </center>
 
 ### Service
