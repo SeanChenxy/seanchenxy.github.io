@@ -23,7 +23,8 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 ### News
 
-**2021/3/1** Had one paper accepted by CVPR 2021 about monocular hand reconstruction.
+**2021/9/1** [Hand3DResearch](https://github.com/SeanChenxy/Hand3DResearch) was released to track recent works in 3D hand tasks.
+<br/>**2021/3/1** Had one paper accepted by CVPR 2021 about monocular hand reconstruction.
 <br/>**2021/3/1** Our book [Visual Perception and Control of Underwater Robots](https://www.routledge.com/Visual-Perception-and-Control-of-Underwater-Robots/Yu-Chen-Kong/p/book/9780367695781) was published .
 
 ### Experience
