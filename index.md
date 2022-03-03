@@ -22,8 +22,9 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. My reseach interests lie in the joint field of robotics and computer vision, including but not limited to scene perception, 3D human/object/scene understanding, and human-machine interaction.
 
 ### News
-
-**2021/9/1** [Hand3DResearch](https://github.com/SeanChenxy/Hand3DResearch) was released to track recent works in 3D hand tasks.
+**2022/3/2** Had one paper accepted by CVPR 2022 about monocular hand reconstruction.
+<br/>**2022/2/25** Had one paper accepted by IEEE Transactions on Cybernetics about few-shot object detection.
+<br/>**2021/9/1** [Hand3DResearch](https://github.com/SeanChenxy/Hand3DResearch) was released to track recent works in 3D hand tasks.
 <br/>**2021/3/1** Had one paper accepted by CVPR 2021 about monocular hand reconstruction.
 <br/>**2021/3/1** Our book [Visual Perception and Control of Underwater Robots](https://www.routledge.com/Visual-Perception-and-Control-of-Underwater-Robots/Yu-Chen-Kong/p/book/9780367695781) was published .
 
@@ -43,6 +44,14 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 
 ### Publications (Selected)
+
+**MobRecon: Mobile-Friendly Hand Mesh Reconstruction from Monocular Image**
+<p align="center">
+<img src="./img/mobrecon.png" width="448" height="224">
+</p>
+in *CVPR22*
+<br/>Xingyu Chen, Yufeng Liu, Yajiao Dong, *et al.*
+<br/>[arXiv](https://arxiv.org/pdf/2112.02753.pdf), [Github](https://github.com/SeanChenxy/HandMesh)
 
 **Camera-Space Hand Mesh Recovery via Semantic Aggregation and Adaptive 2D-1D Registration**
 <p align="left">
@@ -102,15 +111,16 @@ in *TIE*
 </center>
 
 ### Service
-A reviewer for MM21, CVPR21, ICRA20, IROS20, ICRA19, IROS19, TCYB, TCSVT, and so on.
+A reviewer for CVPR22, MM21, CVPR21, ICRA20, IROS20, ICRA19, IROS19, TCYB, TCSVT, and so on.
 
 ### Hobby
 
 <p align="center">
 <img src="./img/zelda.jpg" width="300" height="">
+<img src="./img/Spiritfarer.jpeg" width="300" height="">
 </p>
 
-I love to play Nintendo Switch. Zelda is my favorite games, and I am skilled at playing PES and NBA 2K.
+I love to play Nintendo Switch. Zelda is my favorite games, and I am skilled at playing PES and NBA 2K. I also like the infectious Spiritfarer.
 <br/>I’m also interested in making music with guitar. See my [podcast]( https://music.163.com/#/radio?id=794486541) in NetEase Music.
 <br/>My record for the 1000-meter freestyle swim reaches 27'08''.
 
