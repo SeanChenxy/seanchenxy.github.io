@@ -34,8 +34,8 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 <img align="left" src="img/xiaobing.png" width="50"> 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Researcher, [Xiaobing.AI](https://www.xiaoice.com/) 
-<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jun. 2022 ~ Present
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Researcher, [Xiaobing.AI](https://www.xiaoice.com/) 
+<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jun. 2022 ~ Present
 
 <img align="left" src="img/logo_Kuaishou.png" width="190"> 
 
@@ -111,7 +111,7 @@ in *TIE*
 </center>
 
 ### Service
-A reviewer for CVPR22, MM21, CVPR21, ICRA20, IROS20, ICRA19, IROS19, TCYB, TCSVT, and so on.
+A reviewer for ECCV22, CVPR22, MM21, CVPR21, ICRA20, IROS20, ICRA19, IROS19, TCYB, TCSVT, and so on.
 
 ### Hobby
 
