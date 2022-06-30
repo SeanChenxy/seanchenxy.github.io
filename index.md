@@ -51,7 +51,7 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 
 ### Publications (Selected)
-[Here](./publication.md) for full punlication.
+[Here](./publication.md) for full publication.
 
 
 **MobRecon: Mobile-Friendly Hand Mesh Reconstruction from Monocular Image**
