@@ -19,7 +19,7 @@ Researcher at Xiaobing.AI
 <br/>
 ### Research Interests
 
-I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. My reseach interests lie in the joint field of robotics, graphics, and computer vision, including but not limited to human digitalization, 3D geometry understanding, and human-machine interaction.
+I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. After graduation, my reseach interests lie in the joint field of robotics, graphics, and computer vision, including but not limited to human digitalization, 3D geometry understanding, and human-machine interaction.
 
 ### News
 **2022/6/30** Had one paper accepted by ACM MM 2022 about monocular hand reconstruction.
@@ -34,8 +34,8 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 <img align="left" src="img/xiaobing.png" width="50"> 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Researcher, [Xiaobing.AI](https://www.xiaoice.com/) 
-<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jun. 2022 ~ Present
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Researcher, [Xiaobing.AI](https://www.xiaoice.com/) 
+<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jun. 2022 ~ Present
 
 <img align="left" src="img/logo_Kuaishou.png" width="190"> 
 
