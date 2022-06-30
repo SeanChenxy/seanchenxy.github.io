@@ -1,11 +1,11 @@
 # Xingyu Chen
 
-CV&AI Researcher at Y-tech, Kuaishou Technology
+Researcher at Xiaobing.AI
 <br/>Email: chenxy.sean@gmail.com 
 
 <img align="left" src="./img/photo.jpg" width="180" height="">
 
-&emsp;I'm currently a researcher at Y-tech, Kuaishou Technology (Kwai Inc.). 
+&emsp;I'm currently a researcher at Xiaobing.AI. 
 <br/> &emsp;I obtained my Ph.D. in Automation from Institute of Automation, Chinese 
 <br/> &emsp;Academy of Science in 2020, under the supervision of Prof. [Junzhi Yu](https://scholar.google.com/citations?user=Gudfky4AAAAJ&hl=en). 
 <br/> &emsp;Previously I received my B.S. in Electrical Engineering and Automation from
@@ -19,10 +19,11 @@ CV&AI Researcher at Y-tech, Kuaishou Technology
 <br/>
 ### Research Interests
 
-I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. My reseach interests lie in the joint field of robotics and computer vision, including but not limited to scene perception, 3D human/object/scene understanding, and human-machine interaction.
+I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. My reseach interests lie in the joint field of robotics, graphics, and computer vision, including but not limited to human digitalization, 3D geometry understanding, and human-machine interaction.
 
 ### News
-**2022/4/2** Our book *Visual Perception and Control of Underwater Robots* was Highly Recommended by [CHOICE Reviews](https://www.choice360.org/products/choice-reviews/).
+**2022/6/30** Had one paper accepted by ACM MM 2022 about monocular hand reconstruction.
+<br/>**2022/4/2** Our book *Visual Perception and Control of Underwater Robots* was Highly Recommended by [CHOICE Reviews](https://www.choice360.org/products/choice-reviews/).
 <br/>**2022/3/2** Had one paper accepted by CVPR 2022 about monocular hand reconstruction.
 <br/>**2022/2/25** Had one paper accepted by IEEE Transactions on Cybernetics about few-shot object detection.
 <br/>**2021/9/1** [Hand3DResearch](https://github.com/SeanChenxy/Hand3DResearch) was released to track recent works in 3D hand tasks.
@@ -31,10 +32,15 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 ### Experience
 
+<img align="left" src="img/xiaobing.png" width="50"> 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Researcher, [Xiaobing.AI](https://www.xiaoice.com/) 
+<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jun. 2022 ~ Present
+
 <img align="left" src="img/logo_Kuaishou.png" width="190"> 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;CV&AI Researcher, [Kuaishou Technology](https://www.kwai.com/) 
-<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jul. 2020 ~ Present
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Researcher, [Kuaishou Technology](https://www.kwai.com/) 
+<br/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;Jul. 2020 ~ May 2022
 
 <img align="left" src="img/logo_IA.jpg" width="300"> 
 
@@ -45,6 +51,8 @@ I have been focusing on object detection/tracking for underwater robotics since 
 
 
 ### Publications (Selected)
+[Here](./publication.md) for full punlication.
+
 
 **MobRecon: Mobile-Friendly Hand Mesh Reconstruction from Monocular Image**
 <p align="center">
@@ -89,15 +97,6 @@ in *TIE*
 <br/>[arXiv](https://arxiv.org/pdf/1712.00736.pdf), [Github](https://github.com/SeanChenxy/GAN_RS)
 
 
-### Technical Reports
-
-**Reveal of Domain Effect: How Visual Restoration Contributes to Object Detection in Aquatic Scenes**
-<br/>Xingyu Chen, Yue Lu, Zhengxing Wu, Junzhi Yu, and Li Wen.
-[<br/>arXiv](https://arxiv.org/pdf/2003.01913.pdf)
-
-**Rethinking Temporal Object Detection from Robotic Perspectives**
-<br/>Xingyu Chen, Zhengxing Wu, Junzhi Yu, and Li Wen.
-<br/>[arXiv](https://arxiv.org/pdf/1912.10406.pdf)
 
 
 ### Honors
