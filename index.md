@@ -22,7 +22,8 @@ Researcher at Xiaobing.AI
 I have been focusing on object detection/tracking for underwater robotics since I started my PhD in 2015. After graduation, my reseach interests lie in the joint field of robotics, graphics, and computer vision, including but not limited to human digitalization, 3D geometry understanding, and human-machine interaction.
 
 ### News
-**2022/6/30** Had one paper accepted by ACM MM 2022 about monocular hand reconstruction.
+**2022/7/9** Had one paper accepted by ECCV 2022 about open-world object detection.
+<br/>**2022/6/30** Had one paper accepted by ACM MM 2022 about monocular hand reconstruction.
 <br/>**2022/4/2** Our book *Visual Perception and Control of Underwater Robots* was Highly Recommended by [CHOICE Reviews](https://www.choice360.org/products/choice-reviews/).
 <br/>**2022/3/2** Had one paper accepted by CVPR 2022 about monocular hand reconstruction.
 <br/>**2022/2/25** Had one paper accepted by IEEE Transactions on Cybernetics about few-shot object detection.

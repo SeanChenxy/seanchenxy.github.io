@@ -1,3 +1,5 @@
+Zhiheng Wu, Yue Lu, **Xingyu Chen**, Zhengxing Wu, Liwen Kang, Junzhi Yu. UC-OWOD: Unknown-Classified Open World Object Detection. European Conference on Computer Vision (ECCV), Oct. 2022. 
+
 Daiheng Gao, Xindi Zhang, **Xingyu Chen**, Andong Tan, Bang Zhang, Pan Pan, Ping Tan. CycleHand: Increasing 3D pose estimation ability on in-the-wild monocular image through cyclic flow. *ACM Multimedia*, Oct. 2022. 
 
 **Xingyu Chen**, Yufeng Liu, Yajiao Dong, Xiong Zhang, Chongyang Ma, Yanmin Xiong, Yuan Zhang, Xiaoyan Guo. MobRecon: Mobile-Friendly Hand Mesh Reconstruction from Monocular Image. in *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR),* Jun. 2022. pp. 20544-20554. [CVF](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_MobRecon_Mobile-Friendly_Hand_Mesh_Reconstruction_From_Monocular_Image_CVPR_2022_paper.pdf), [arXiv](https://arxiv.org/abs/2112.02753)
