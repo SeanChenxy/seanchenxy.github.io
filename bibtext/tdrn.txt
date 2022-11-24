@@ -1,0 +1,9 @@
+@article{bib:TDRN,
+  title={Joint anchor-feature refinement for real-time accurate object detection in images and videos},
+  author={Chen, Xingyu and Yu, Junzhi and Kong, Shihan and Wu, Zhengxing and Wen, Li},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  volume={31},
+  number={2},
+  pages={594--607},
+  year={2020},
+}

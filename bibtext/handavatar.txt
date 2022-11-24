@@ -1,0 +1,6 @@
+@article{bib:handavatar,
+    title={Hand Avatar: Free-Pose Hand Animation and Rendering from Monocular Video},
+    author={Chen, Xingyu and Wang, Baoyuan and Shum, Heung-Yeung},
+    journal={arXiv:2211.12782},
+    year={2022}
+}

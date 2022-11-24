@@ -1,4 +1,4 @@
-Zhiheng Wu, Yue Lu, **Xingyu Chen**, Zhengxing Wu, Liwen Kang, Junzhi Yu. UC-OWOD: Unknown-Classified Open World Object Detection. European Conference on Computer Vision (ECCV), Oct. 2022. 
+Zhiheng Wu, Yue Lu, **Xingyu Chen**, Zhengxing Wu, Liwen Kang, Junzhi Yu. UC-OWOD: Unknown-Classified Open World Object Detection. European Conference on Computer Vision (ECCV), Oct. 2022. [arXiv](https://arxiv.org/pdf/2207.11455.pdf)
 
 Daiheng Gao, Xindi Zhang, **Xingyu Chen**, Andong Tan, Bang Zhang, Pan Pan, Ping Tan. CycleHand: Increasing 3D pose estimation ability on in-the-wild monocular image through cyclic flow. *ACM Multimedia*, Oct. 2022. 
 

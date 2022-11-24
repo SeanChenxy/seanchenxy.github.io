@@ -1,0 +1,9 @@
+@article{bib:GANRS,
+  title={Towards real-time advancement of underwater visual quality with GAN},
+  author={Chen, Xingyu and Yu, Junzhi and Kong, Shihan and Wu, Zhengxing and Fang, Xi and Wen, Li},
+  journal={IEEE Transactions on Industrial Electronics},
+  volume={66},
+  number={12},
+  pages={9350--9359},
+  year={2019},
+}
