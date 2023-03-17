@@ -1,6 +1,6 @@
-@article{bib:handavatar,
+@inproceedings{bib:handavatar,
     title={Hand Avatar: Free-Pose Hand Animation and Rendering from Monocular Video},
     author={Chen, Xingyu and Wang, Baoyuan and Shum, Heung-Yeung},
-    journal={arXiv:2211.12782},
-    year={2022}
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2023}
 }

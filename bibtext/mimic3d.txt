@@ -1,0 +1,6 @@
+@article{bib:mimic3d,
+    title={Mimic3D: Thriving 3D-Aware GANs via 3D-to-2D Imitation},
+    author={Chen, Xingyu and Deng, Yu and Wang, Baoyuan},
+    journal={arXiv:2303.09036},
+    year={2023}
+}
