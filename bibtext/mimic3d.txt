@@ -1,6 +1,6 @@
-@article{bib:mimic3d,
+@inproceedings{bib:mimic3d,
     title={Mimic3D: Thriving 3D-Aware GANs via 3D-to-2D Imitation},
     author={Chen, Xingyu and Deng, Yu and Wang, Baoyuan},
-    journal={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
     year={2023}
 }
