@@ -1,6 +1,6 @@
-@article{bib:havefun,
-    title={HAVE-FUN: Human Avatar Reconstruction from Few-Shot Unconstrained Images},
-    author={Yang, Xihe and Chen, Xingyu and Gao, Daiheng and Han, Xiaoguang and Wang, Baoyuan},
-    journal={arXiv:2311.15672},
-    year={2023}
+@inproceedings{bib:havefun,
+  title={HAVE-FUN: Human Avatar Reconstruction from Few-Shot Unconstrained Images},
+  author={Yang, Xihe and Chen, Xingyu and Gao, Daiheng and Wang, Shaohui and Han, Xiaoguang and Wang, Baoyuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
 }
