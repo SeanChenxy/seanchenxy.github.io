@@ -1,0 +1,6 @@
+@article{bib:rexthinker,
+  title={Rex-Thinker: Grounded Object Referring via Chain-of-Thought Reasoning},
+  author={Jiang, Qing and Chen, Xingyu and Zeng, Zhaoyang and Yu, Junzhi and Zhang, Lei},
+  journal={arXiv preprint arXiv:2506.04034},
+  year={2025}
+}

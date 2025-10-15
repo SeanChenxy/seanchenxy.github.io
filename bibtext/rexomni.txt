@@ -1,0 +1,6 @@
+@article{bib:rexomni,
+  title={Detect Anything via Next Point Prediction},
+  author={Jiang, Qing and Huo, Junan and Chen, Xingyu and Xiong, Yuda and Zeng, Zhaoyang and Chen, Yihao and Ren, Tianhe and Yu, Junzhi and Zhang, Lei},
+  journal={arXiv preprint arXiv:2510.12798},
+  year={2025}
+}
