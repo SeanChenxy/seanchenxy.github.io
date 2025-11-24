@@ -1,0 +1,6 @@
+@article{bib:rexomni,
+  title={DINO-X: A Unified Vision Model for Open-World Object Detection and Understanding},
+  author={IDEA Research Team},
+  journal={arXiv preprint arXiv:2411.14347},
+  year={2024}
+}
