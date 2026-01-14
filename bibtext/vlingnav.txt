@@ -1,0 +1,6 @@
+@article{bib:vlingnav,
+  title={VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory},
+  author={Wang, Shaoan and Luo, Yuanfei and Chen, Xingyu and Luo, Aocheng and Li, Dongyue and Liu, Chang and Chen, Sheng and Zhang, Yangang and Yu, Junzhi},
+  journal={arXiv preprint arXiv:2601.08665},
+  year={2026}
+}
