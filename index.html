@@ -114,27 +114,42 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-       
-        <tr></tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-              <img src='assets/vlingnav.jpg' style="width:100%;max-width:100%; position: absolute;top: -5%">
+
+      <tr onmouseout="vlingnav_stop()" onmouseover="vlingnav_start()" >
+          <td style="padding:20px;width:30%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='vlingnav_image'>
+              <img src="assets/vlingnav.gif" width="230" height="135">
               </div>
+              <img src='assets/vlingnav.png' width="230" height="135">
+            </div>
+            <script type="text/javascript">
+              function vlingnav_start() {
+                document.getElementById('vlingnav_image').style.opacity = "1";
+              }
+              function vlingnav_stop() {
+                document.getElementById('vlingnav_image').style.opacity = "0";
+              }
+              vlingnav_stop()
+            </script>
           </td>
-          <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory</papertitle>
-              <br>
-              Shaoan Wang, Yuanfei Luo, <strong>Xingyu Chen</strong> <span>&#9993;</span>, Aocheng Luo, Dongyue Li, Chang Liu, Sheng Chen, Yangang Zhang, Junzhi Yu <span>&#9993;</span> (<span>&#9993;</span> for corresponding author)
-              <br>
-              arXiv 2026.
-              <br>
+          <td style="padding:20px;width:70%;vertical-align:middle">
+            <papertitle>VLingNav: Embodied Navigation with Adaptive Reasoning and Visual-Assisted Linguistic Memory</papertitle>
+            <br>
+            Shaoan Wang*, Yuanfei Luo*, <strong>Xingyu Chen</strong> <span>&#9993;</span>, Aocheng Luo, Dongyue Li, Chang Liu, Sheng Chen, Yangang Zhang, Junzhi Yu <span>&#9993;</span> 
+            <br>
+            arXiv 2026.
+            <br>
               <a href="https://arxiv.org/abs/2601.08665">[PDF]</a>
               <a href="https://wsakobe.github.io/VLingNav-web/">[Project]</a>
               <a href="bibtext/vlingnav.txt">[BibTeX]</a>
-              <br>
-              <p>An embodied navigation framework with adaptive thinking and memory.</p>
+            <br>
+            <p></p>
+            <p>
+              VLingNav is a VLA model for embodied navigation that combines an adaptive chain-of-thought mechanism (AdaCoT) to trigger explicit reasoning only when needed with a visual-assisted linguistic memory module (VLingMem) to build persistent cross-modal semantic memory for long-horizon navigation.
+            </p>
           </td>
-      </tr>
+        </tr>
 
         <tr></tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
