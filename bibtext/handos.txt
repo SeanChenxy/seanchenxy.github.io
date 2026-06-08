@@ -1,6 +1,0 @@
-@inproceedings{bib:handos,
-    title={HandOS: 3D Hand Reconstruction in One Stage},
-    author={Chen, Xingyu and Song, Zhuheng and Jiang, Xiaoke and Hu, Yaoqing and Yu, Junzhi and Zhang, Lei},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2025}
-}

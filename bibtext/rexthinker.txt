@@ -1,6 +1,0 @@
-@inproceedings{bib:rexthinker,
-  title={Rex-Thinker: Grounded Object Referring via Chain-of-Thought Reasoning},
-  author={Jiang, Qing and Chen, Xingyu and Zeng, Zhaoyang and Yu, Junzhi and Zhang, Lei},
-  booktitle={Proceedings of the International Conference on Learning Representations (ICLR) },
-  year={2026}
-}

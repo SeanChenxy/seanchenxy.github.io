@@ -1,226 +1,1021 @@
-<!DOCTYPE HTML>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="author" content="Xingyu Chen">
-  <meta name="description" content="Xingyu Chen's Homepage">
-  <meta name="keywords" content="Xingyu Chen,陈星宇,homepage,主页,PhD,computer vision,3D hand,3D reconstruction,detection">
+  <meta name="description" content="Full publication list for Xingyu Chen">
+  <meta name="keywords" content="Xingyu Chen, publications, computer vision, robotics, 3D reconstruction, embodied AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xingyu Chen (陈星宇)'s Homepage</title>
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Xingyu Chen - Publications</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --surface-soft: #eef5f3;
+      --ink: #17202a;
+      --muted: #5e6875;
+      --line: #dde3ea;
+      --accent: #0f766e;
+      --accent-dark: #0b5d57;
+      --warm: #a15c18;
+      --warm-soft: #fff4e3;
+      --shadow: 0 14px 36px rgba(31, 41, 55, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      text-underline-offset: 4px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--warm);
+      text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 100;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: var(--ink);
+      color: #ffffff;
+      transition: top 0.2s ease;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(221, 227, 234, 0.86);
+      background: rgba(246, 247, 249, 0.92);
+      backdrop-filter: blur(16px);
+    }
+
+    .topbar-inner {
+      width: min(1120px, calc(100% - 40px));
+      min-height: 66px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus,
+    .nav-links a.active {
+      color: var(--accent-dark);
+      background: var(--surface-soft);
+      text-decoration: none;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 48px 0 34px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+      gap: 36px;
+      align-items: end;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--accent-dark);
+      font-size: 14px;
+      font-weight: 750;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-bottom: 16px;
+      font-size: 64px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: #283544;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .button {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 14px;
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(31, 41, 55, 0.05);
+    }
+
+    .button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .button:hover,
+    .button:focus {
+      color: var(--accent-dark);
+      border-color: rgba(15, 118, 110, 0.38);
+      background: var(--surface-soft);
+      text-decoration: none;
+    }
+
+    .button.primary:hover,
+    .button.primary:focus {
+      color: #ffffff;
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 46px;
+    }
+
+    .stat {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .section-nav {
+      position: sticky;
+      top: 66px;
+      z-index: 10;
+      margin-bottom: 38px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 28px rgba(31, 41, 55, 0.055);
+    }
+
+    .section-nav a {
+      border-radius: 8px;
+      padding: 7px 11px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .section-nav a:hover,
+    .section-nav a:focus {
+      color: var(--accent-dark);
+      background: var(--surface-soft);
+      text-decoration: none;
+    }
+
+    .pub-section {
+      scroll-margin-top: 130px;
+      margin-bottom: 46px;
+    }
+
+    .section-heading {
+      margin-bottom: 18px;
+      border-top: 1px solid var(--line);
+      padding-top: 38px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 4px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .pub-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .pub-item {
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: var(--surface);
+      box-shadow: 0 8px 22px rgba(31, 41, 55, 0.045);
+    }
+
+    .pub-index {
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      background: var(--surface-soft);
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .pub-meta {
+      margin-bottom: 6px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--warm);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .pub-item h3 {
+      margin-bottom: 6px;
+      color: var(--ink);
+      font-size: 18px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .authors,
+    .venue {
+      margin-bottom: 7px;
+      color: #374151;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .venue {
+      color: var(--muted);
+    }
+
+    .paper-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .paper-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 31px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 4px 10px;
+      color: var(--accent-dark);
+      background: #fbfcfd;
+      font-size: 14px;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .paper-links a:hover,
+    .paper-links a:focus {
+      border-color: rgba(15, 118, 110, 0.36);
+      background: var(--surface-soft);
+      text-decoration: none;
+    }
+
+    .note {
+      margin: 0 0 34px;
+      border: 1px solid #f0d3a8;
+      border-left: 5px solid var(--warm);
+      border-radius: 8px;
+      padding: 16px 18px;
+      background: var(--warm-soft);
+      color: #684312;
+    }
+
+    footer {
+      width: min(1120px, calc(100% - 40px));
+      margin: 20px auto 0;
+      border-top: 1px solid var(--line);
+      padding: 24px 0 38px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 860px) {
+      .topbar-inner,
+      main,
+      footer {
+        width: min(100% - 28px, 720px);
+      }
+
+      .topbar-inner {
+        min-height: auto;
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links,
+      .hero-actions {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding-top: 34px;
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section-nav {
+        position: static;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 15px;
+      }
+
+      .topbar {
+        position: static;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      .lead {
+        font-size: 17px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .pub-item {
+        grid-template-columns: 1fr;
+        padding: 14px;
+      }
+
+      .pub-index {
+        width: auto;
+        height: auto;
+        justify-self: start;
+        padding: 6px 10px;
+      }
+
+      .button,
+      .paper-links a {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Xingyu Chen (陈星宇)</name>
-              </p>
-              <p style="text-align:center">
-                Email: chenxy.sean[at]gmail.com &nbsp; &nbsp;&nbsp;&nbsp; <a href="https://scholar.google.com/citations?user=YurWtIEAAAAJ&hln">Google Scholar</a> &nbsp; &nbsp;&nbsp;&nbsp;<a href="https://github.com/SeanChenxy">Github</a>
-              </p>
-              <p style="text-indent: -2em"><strong>First- or Corresponding-Author Publications</strong></p>
-              <p style="text-indent: -2em">[14] <strong>Xingyu Chen</strong>*, Zhuheng Song*, Xiaoke Jiang, Yaoqing Hu, Junzhi Yu, Lei Zhang, <br>
-                "HandOS: 3D hand reconstruction in one stage," <br>
-                in <em> Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </em>, 2025.
-                <a href="https://arxiv.org/pdf/2412.01537">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[13] Xihe Yang*, <strong>Xingyu Chen</strong> <span>&#9993;</span>*, Daiheng Gao, Shaohui Wang, Xiaoguang Han, Baoyuan Wang <span>&#9993;</span>, <br>
-                "HAVE-FUN: Human avatar reconstruction from few-shot unconstrained images," <br>
-                in <em> Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </em>, 2024.
-                <a href="https://arxiv.org/abs/2311.15672">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[12] <strong>Xingyu Chen</strong>*, Yu Deng*, Baoyuan Wang, <br>
-                "Mimic3D: Thriving 3D-aware GANs via 3D-to-2D imitation," <br>
-                in <em> Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) </em>, 2023, pp. 2338-2348. 
-                <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_Mimic3D_Thriving_3D-Aware_GANs_via_3D-to-2D_Imitation_ICCV_2023_paper.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[11] <strong>Xingyu Chen</strong>, Baoyuan Wang, Heung-Yeung Shum, <br>
-                "Hand avatar: free-pose hand animation and rendering from monocular video," <br>
-                in <em> Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) </em>, 2023, pp. 8683-8693. 
-                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_Hand_Avatar_Free-Pose_Hand_Animation_and_Rendering_From_Monocular_Video_CVPR_2023_paper.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[10] <strong>Xingyu Chen</strong>, Yufeng Liu, Yajiao Dong, Xiong Zhang, Chongyang Ma, Yanmin Xiong, Yuan Zhang, Xiaoyan Guo, <br>
-                "MobRecon: Mobile-friendly hand mesh reconstruction from monocular image," <br>
-                in <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022, pp. 20544-20554. 
-                <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_MobRecon_Mobile-Friendly_Hand_Mesh_Reconstruction_From_Monocular_Image_CVPR_2022_paper.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[9] <strong>Xingyu Chen</strong>, Yufeng Liu, Chongyang Ma, Jianlong Chang, Huayan Wang, Tian Chen, Xiaoyan Guo, Pengfei Wan, Wen Zheng, <br>
-                "Camera-space hand mesh recovery via semantic aggregation and adaptive 2D-1D registration," <br>
-                in <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021, pp. 13274-13283. 
-                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Camera-Space_Hand_Mesh_Recovery_via_Semantic_Aggregation_and_Adaptive_2D-1D_CVPR_2021_paper.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[8] <strong>Xingyu Chen</strong>, Junzhi Yu, Shihan Kong, Zhengxing Wu, and Li Wen, <br>
-                "Joint anchor-feature refinement for real-time accurate object detection in images and videos," <br>
-                <em>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</em>, 2021, 31(2):594-607.
-                <a href="https://ieeexplore.ieee.org/document/9037090">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[7] <strong>Xingyu Chen</strong>, Junzhi Yu, and Zhengxing Wu, <br>
-                "Temporally identity-aware SSD with attentional LSTM," <br>
-                <em>IEEE Transactions on Cybernetics</em>, 2020, 50(6):2674-2686.
-                <a href="https://ieeexplore.ieee.org/document/8638831">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[6] <strong>Xingyu Chen</strong>, Junzhi Yu, Zhengxing Wu, Yan Meng, Shihan Kong, <br>
-                "Toward a maneuverable miniature robotic fish equipped with a novel magnetic actuator system," <br>
-                <em>IEEE Transactions on Systems, Man, and Cybernetics: Systems (TSMC)</em>, 2020, 50(7):2327-2337.
-                <a href="https://ieeexplore.ieee.org/document/8320969">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[5] <strong>Xingyu Chen</strong>, Junzhi Yu, Shihan Kong, Zhengxing Wu, Xi Fang, and Li Wen, <br>
-                "Towards real-time advancement of underwater visual quality with GAN," <br>
-                <em>IEEE Transactions on Industrial Electronics (TIE)</em>, 2019, 66(12):9350-9359.
-                <a href="https://ieeexplore.ieee.org/document/8624564">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[4] <strong>Xingyu Chen</strong>, Xiyuan Yang, Shihan Kong Zhengxing Wu, and Junzhi Yu, <br>
-                "Dual refinement network for single-shot object detection," <br>
-                in <em>Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)</em>, 2019, pp. 8305-8310.
-                <a href="https://ieeexplore.ieee.org/document/8793816">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[3] <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu, <br>
-                "TSSD: Temporal single-shot detector based on attention and LSTM," <br>
-                in <em>Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2018, pp. 5758-5763.
-                <a href="https://ieeexplore.ieee.org/document/8593963">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[2] <strong>Xingyu Chen</strong>, Zhengxing Wu, Junzhi Yu, and Li Wen, <br>
-                "A real-time and unsupervised advancement scheme for underwater machine vision," <br>
-                in <em>Proceedings of the IEEE International Conference on CYBER Technology in Automation, Control, and Intelligent Systems</em>, 2017, pp. 271-276. (<strong>Best Conference Paper Award</strong>)
-                <a href="https://ieeexplore.ieee.org/document/8446363">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[1] <strong>Xingyu Chen</strong>, Zhengxing Wu, Chao Zhou, and Junzhi Yu, <br>
-                "Design and implementation of a magnetically actuated miniature robotic fish," <br>
-                in <em>Proceedings of the World Congress of International Federation of Automatic Control (IFAC)</em>, 2017, pp. 7045-7050.
-                <a href="https://www.researchgate.net/profile/Xingyu-Chen-25/publication/320496679_Design_and_Implementation_of_a_Magnetically_Actuated_Miniature_Robotic_Fish_This_work_was_supported_by_the_National_Natural_Science_Foundation_of_China_nos_61633020_61603388_61633004_and_61421004_by_t/links/5ab0bf3f0f7e9b4897c2358f/Design-and-Implementation-of-a-Magnetically-Actuated-Miniature-Robotic-Fish-This-work-was-supported-by-the-National-Natural-Science-Foundation-of-China-nos-61633020-61603388-61633004-and-61421004.pdf">PDF</a>.
-              </p>
-              
-              <br>
-              <p style="text-indent: -2em"><strong>Co-Author Publications</strong></p>
-              <p style="text-indent: -2em">[19] Yaoqing Hu, Shaoan Wang, Dongyue Li, <strong>Xingyu Chen</strong>, Mingzhu Zhu, Zhanhua Xin, Junzhi Yu, <br>
-                "Adjusting distributed cameras for robust moving object pose estimation," <br>
-                <em>IEEE Transactions on Automation Science and Engineering</em>, 2025.
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10833659">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[18] Zhiheng Wu, Zhengxing Wu, <strong>Xingyu Chen</strong>, Yue Lu, Junzhi Yu, <br>
-                "Self-supervised underwater image generation for underwater domain pre-training," <br>
-                <em>IEEE Transactions on Instrumentation and Measurement</em>, 2024.
-                <a href="https://ieeexplore.ieee.org/document/10458951/">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[17] Yu Deng, Duoming Wang, Xiaohang Ren, <strong>Xingyu Chen</strong>, Baoyuan Wang, <br> 
-                "Learning one-shot 4D head avatar synthesis using synthetic data," <br> 
-                in <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024.
-                <a href="https://arxiv.org/abs/2311.18729">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[16] Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Min Tan, Junzhi Yu, <br> 
-                "Binary similarity few-shot object detection with modeling of hard negative samples," <br>
-                <em>IEEE Transactions on Multimedia (TMM)</em>, 2023.
-                <a href="https://ieeexplore.ieee.org/document/10298598">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[15] Jiaqi Liu, Zhuheng Song, Yue Lu, Hui Yang, <strong>Xingyu Chen</strong>, Youning Duo, Bohan Chen, Shihan Kong, Zhuyin Shao, Zheyuan Gong, Shiqiang Wang, Xilun Ding, Junzhi Yu, Li Wen. <br>
-                "An underwater robotic system with a soft continuum manipulator for autonomous aquatic grasping," <br> 
-                <em>IEEE/ASME Transactions on Mechatronics (TMec)</em>, 2023.
-                <a href="https://ieeexplore.ieee.org/document/10294235">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[14] Shuaizheng Yan, <strong>Xingyu Chen</strong>, Zhengxing Wu, Min Tan, and Junzhi Yu, <br>
-                "HybrUR: A hybrid physical-neural solution for unsupervised underwater image restoration," <br>
-                <em>IEEE Transactions on Image Processing (TIP)</em>, 2023, 32: 5004-5016.
-                <a href="https://arxiv.org/pdf/2107.02660.pdf">PDF</a>.
-                <!-- <a href="https://ieeexplore.ieee.org/abstract/document/10238432">IEEE</a>. -->
-              </p>
-              <p style="text-indent: -2em">[13] Xiaohang Ren, <strong>Xingyu Chen</strong>, Pengfei Yao, Heung-Yeung Shum, Baoyuan Wang, <br>
-                "Reinforced disentanglement for face swapping without skip connection," <br> 
-                in <em> Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) </em>, 2023, pp. 20665-20675
-                <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ren_Reinforced_Disentanglement_for_Face_Swapping_without_Skip_Connection_ICCV_2023_paper.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[12] Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Junzhi Yu, <br>
-                "Decoupled metric network for single-stage few-shot object detection," <br> 
-                <em>IEEE Transactions on Cybernetics (TCYB)</em>, 2023, 53(1): 514-525.
-                <a href="https://ieeexplore.ieee.org/abstract/document/9721820">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[11] Zhiheng Wu, Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Liwen Kang, Junzhi Yu, <br> 
-                "UC-OWOD: Unknown-Classified Open World Object Detection," <br> 
-                in <em> Proceedings of the European Conference on Computer Vision (ECCV)</em>, 2022, pp. 193-210.
-                <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700191.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[10] Daiheng Gao, Xindi Zhang, <strong>Xingyu Chen</strong>, Andong Tan, Bang Zhang, Pan Pan, Ping Tan, <br>
-                "CycleHand: Increasing 3D pose estimation ability on in-the-wild monocular image through cyclic flow," <br>
-                in <em>Proceedings of the ACM Multimedia (ACM MM)</em>, 2022, pp. 2452-2463. 
-                <a href="https://dl.acm.org/doi/pdf/10.1145/3503161.3547828?casa_token=Te6rOUl1CPQAAAAA:EQMJZVl3sgtPO3apPFM0-ofCYi6G78dXjMpV51PxUvpk6ne8M7hA4YbHawGb5vL2lKoafqJoxefrHr0">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[9] Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Junzhi Yu, and Li Wen, <br>
-                "A novel robotic visual perception framework for underwater operation," <br>
-                <em>Frontiers of Information Technology & Electronic Engineering</em>, 2022, 23(11): 1602-1619.
-              </p>
-              <p style="text-indent: -2em">[8] Hui Yang, Jiaqi Liu, Xi Fang, <strong>Xingyu Chen</strong>, Zheyuan Gong, Shiqiang Wang, Shihan Kong, Junzhi Yu, Li Wen, <br>
-                "Prediction model-based learning adaptive control for underwater grasping of a soft manipulator," <br>
-                <em>International Journal of Intelligent Robotics and Applications</em>, 2021, 5:337-353.
-                <a href="https://www.researchgate.net/profile/Shiqiang-Wang-9/publication/354353343_Prediction_model-based_learning_adaptive_control_for_underwater_grasping_of_a_soft_manipulator/links/6213675c6c472329dcfa8ea0/Prediction-model-based-learning-adaptive-control-for-underwater-grasping-of-a-soft-manipulator.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[7] Zheyuan Gong, Xi Fang, <strong>Xingyu Chen</strong>, Jiahui Cheng, Zhexin Xie, Jiaqi Liu, Bohan Chen, Hui Yang, Shihan Kong, Yufei Hao, Tianmiao Wang, Junzhi Yu, and Li Wen, <br>
-                "A soft manipulator for efficient delicate grasping in shallow water: Modelling, control, and real-world experiments," <br>
-                <em>International Journal of Robotics Research</em>, 2021, 40(1):449-469.
-                <a href="https://journals.sagepub.com/doi/pdf/10.1177/0278364920917203">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[6] Shihan Kong, Xi Fang, <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu, <br>
-                "A NSGA-II-based calibration algorithm for underwater binocular vision measurement system," <br>
-                <em>IEEE Transactions on Instrumentation and Measurement</em>, 2019, 69(3):794-803.
-                <a href="https://ieeexplore.ieee.org/document/8692612">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[5] Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Yan Yan, and Junzhi Yu, <br>
-                "A vision-based path planning and following system for a miniature robotic fish," <br> 
-                in <em>Proceedings of the IEEE International Conference on Real-Time Computing and Robotics</em>, 2019, pp. 408-413.
-                <a href="https://ieeexplore.ieee.org/document/9044020">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[4] Shihan Kong, <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu, <br> 
-                "An Unsupervised Grasp Detection for Water-surface Object Collection," <br>
-                <em>in Proceedings of the Chinese Control Conference</em>, 2019, pp. 4421-4426.
-              <p style="text-indent: -2em">[3] Zheyuan Gong, Jiahui Cheng, <strong>Xingyu Chen</strong>, Wenguang Sun, Xi Fang, Kainan Hu, Zhexin Xie, Tianmiao Wang, and Li Wen, <br>
-                "A bio-inspired soft robotic arm: Kinematic modeling and hydrodynamic experiments," <br>
-                <em>Journal of Bionic Engineering</em>, 2018, 15(2): 204-219. (<strong>Highly Cited Research Paper</strong>)
-              </p>
-              <p style="text-indent: -2em">[2] Junzhi Yu, Shifeng Chen, Zhengxing Wu, <strong>Xingyu Chen</strong>, and Min Wang, <br>
-                "Energy analysis of a CPGcontrolled miniature robotic fish," <br>
-                <em>Journal of Bionic Engineering</em>, 2018, 15(2): 260-269.
-              </p>
-              <p style="text-indent: -2em">[1] Shihan Kong, Xi Fang, <em>Xingyu Chen</em>, Zhengxing Wu, and Junzhi Yu, <br>
-                "A real-time underwater robotic visual tracking strategy based on image restoration and kernelized correlation filters," <br>
-                <em>in Proceedings of the Chinese Control And Decision Conference</em>, 2018, pp. 6436-6441.
-              
-              <br><br>
-              <p style="text-indent: -2em"><strong>Technical Reports</strong></p>
-              <p style="text-indent: -2em">[2] <strong>Xingyu Chen</strong>, Yue Lu, Zhengxing Wu, Junzhi Yu, Li Wen. 
-                Reveal of domain effect: How visual restoration contributes to object detection in aquatic scenes. 
-                <em>arXiv</em>, 2020.
-                <a href="https://arxiv.org/pdf/2003.01913.pdf">PDF</a>.
-              </p>
-              <p style="text-indent: -2em">[1] <strong>Xingyu Chen</strong>, Junzhi Yu, and Zhengxing Wu. 
-                Rethinking temporal object detection from robotic perspectives. 
-                <em>arXiv</em>, 2019.
-                <a href="https://arxiv.org/pdf/1912.10406.pdf">PDF</a>.
-              </p>
+  <a class="skip-link" href="#first-author">Skip to publication list</a>
 
-              <br>
-              <p style="text-indent: -2em"><strong>Book</strong></p>
-              <p style="text-indent: -2em">[1] Junzhi Yu, <strong>Xingyu Chen</strong>, Shihan Kong. 
-                Visual Perception and Control of Underwater Robots.
-                ISBN: 9781000346596, Mar. 2021.
-                <a href="https://www.amazon.com/Visual-Perception-Control-Underwater-Robots-dp-0367695782/dp/0367695782/ref=mt_other?_encoding=UTF8&me=&qid=">SALE</a>.
-              </p>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">Xingyu Chen</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Recent Publications</a>
+        <a class="active" href="#top">Full Publications</a>
+      </nav>
+    </div>
+  </header>
 
-              <br>
-              <p style="text-indent: -2em"><strong>Patent</strong></p>
-              <p style="text-indent: -2em">[8] <strong>陈星宇</strong>, 郑文. 三维重建方法、装置、设备及存储介质, 2024-1-12, 中国, ZL202110924536.2. </p>
-              <p style="text-indent: -2em">[7] <strong>陈星宇</strong>, 郑文. 三维重建方法、装置、电子设备及存储介质, 2023-11-28, 中国, ZL202110551893.9. </p>
-              <p style="text-indent: -2em">[6] Zhengxing Wu, Junzhi Yu, Yue Lu, <strong>Xingyu Chen</strong>. Single-stage small-sample-object detection method based on decoupled metric, 2021-12-21, 美国, US11,205,098 B1. </p>
-              <p style="text-indent: -2em">[5] 喻俊志, 孔诗涵, 吴正兴, <strong>陈星宇</strong>. 用于水下双目视觉测量系统的标定方法, 2021-8-3, 中国, ZL201810761859.2. </p>
-              <p style="text-indent: -2em">[4] 吴正兴, 喻俊志, 鲁岳, <strong>陈星宇</strong>, 解耦度量的单阶段小样本目标检测方法, 2021-5-11, 中国, ZL202110199642.9. </p>
-              <p style="text-indent: -2em">[3] Zhengxing Wu, Junzhi Yu, Yan Meng, <strong>Xingyu Chen</strong>, Min Tan. Biomimetic robotic manta ray, 2021-1-7, 美国, US11,161,578 B2. </p>
-              <p style="text-indent: -2em">[2] 吴正兴, 喻俊志, 孟岩, <strong>陈星宇</strong>, 王健. 仿生机器蝠鲼, 2020-9-29, 中国, ZL201910599388.4. </p>
-              <p style="text-indent: -2em">[1] 喻俊志, <strong>陈星宇</strong>, 吴正兴, 孔诗涵. 微型磁驱动仿生机器鱼及其运动控制方法, 2019-11-26, 中国, ZL201711171478.0.
-      </td>
-    </tr>
-  </table>
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Complete publication record</p>
+        <h1 id="page-title">Publications</h1>
+        <p class="lead">
+          A complete list of first- or corresponding-author papers, co-author papers, technical reports, and book.
+        </p>
+      </div>
+      <div class="hero-actions" aria-label="Page actions">
+        <a class="button primary" href="index.html">Back to homepage</a>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Publication counts">
+      <div class="stat"><strong>17</strong><span>First- or corresponding-author publications</span></div>
+      <div class="stat"><strong>22</strong><span>Co-author publications</span></div>
+      <div class="stat"><strong>2</strong><span>Technical reports</span></div>
+    </section>
+
+    <nav class="section-nav" aria-label="Publication sections">
+      <a href="#first-author">First / Corresponding</a>
+      <a href="#co-author">Co-Author</a>
+      <a href="#reports">Technical Reports</a>
+      <a href="#book">Book</a>
+    </nav>
+
+    <p class="note">Notes: * indicates equal contribution. &#9993; indicates corresponding author.</p>
+
+    <section class="pub-section" id="first-author" aria-labelledby="first-author-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="first-author-title">First- or Corresponding-Author Publications</h2>
+          <p>Selected leadership and corresponding-author work.</p>
+        </div>
+      </div>
+
+      <div class="pub-list">
+        <article class="pub-item">
+          <div class="pub-index">17</div>
+          <div>
+            <div class="pub-meta"><span>ICLR 2026</span></div>
+            <h3>Rex-Thinker: Grounded object referring via chain-of-thought reasoning</h3>
+            <p class="authors">Qing Jiang*, <strong>Xingyu Chen</strong>*, Zhaoyang Zeng, Junzhi Yu, and Lei Zhang</p>
+            <p class="venue">In <em>Proceedings of the International Conference on Learning Representations (ICLR)</em>, 2026.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2506.04034">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">16</div>
+          <div>
+            <div class="pub-meta"><span>Tsinghua Science and Technology 2026</span></div>
+            <h3>O2Exp: Online object exploration in underwater environment</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>*, Yue Lu*, Shaoan Wang, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue"><em>Tsinghua Science and Technology</em>, 2026.</p>
+            <div class="paper-links"><a href="https://www.sciopen.com/local/article_pdf/10.26599/TST.2026.90100019.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">15</div>
+          <div>
+            <div class="pub-meta"><span>Ocean Engineering 2026</span></div>
+            <h3>Taming Neural Radiance Fields for Underwater Object Detection in Sonar Images</h3>
+            <p class="authors">Xinheng Zhang*, <strong>Xingyu Chen</strong> &#9993;*, and Junzhi Yu</p>
+            <p class="venue"><em>Ocean Engineering</em>, 2026.</p>
+            <div class="paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0029801825029646">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">14</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2025</span></div>
+            <h3>HandOS: 3D hand reconstruction in one stage</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>*, Zhuheng Song*, Xiaoke Jiang, Yaoqing Hu, Junzhi Yu, and Lei Zhang</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2025.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2412.01537">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">13</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2024</span></div>
+            <h3>HAVE-FUN: Human avatar reconstruction from few-shot unconstrained images</h3>
+            <p class="authors">Xihe Yang*, <strong>Xingyu Chen</strong> &#9993;*, Daiheng Gao, Shaohui Wang, Xiaoguang Han, and Baoyuan Wang &#9993;</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2311.15672">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">12</div>
+          <div>
+            <div class="pub-meta"><span>ICCV 2023</span></div>
+            <h3>Mimic3D: Thriving 3D-aware GANs via 3D-to-2D imitation</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>*, Yu Deng*, and Baoyuan Wang</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2023, pp. 2338-2348.</p>
+            <div class="paper-links"><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_Mimic3D_Thriving_3D-Aware_GANs_via_3D-to-2D_Imitation_ICCV_2023_paper.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">11</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2023</span></div>
+            <h3>Hand avatar: free-pose hand animation and rendering from monocular video</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Baoyuan Wang, and Heung-Yeung Shum</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023, pp. 8683-8693.</p>
+            <div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_Hand_Avatar_Free-Pose_Hand_Animation_and_Rendering_From_Monocular_Video_CVPR_2023_paper.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">10</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2022</span></div>
+            <h3>MobRecon: Mobile-friendly hand mesh reconstruction from monocular image</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Yufeng Liu, Yajiao Dong, Xiong Zhang, Chongyang Ma, Yanmin Xiong, Yuan Zhang, and Xiaoyan Guo</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022, pp. 20544-20554.</p>
+            <div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_MobRecon_Mobile-Friendly_Hand_Mesh_Reconstruction_From_Monocular_Image_CVPR_2022_paper.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">9</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2021</span></div>
+            <h3>Camera-space hand mesh recovery via semantic aggregation and adaptive 2D-1D registration</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Yufeng Liu, Chongyang Ma, Jianlong Chang, Huayan Wang, Tian Chen, Xiaoyan Guo, Pengfei Wan, and Wen Zheng</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2021, pp. 13274-13283.</p>
+            <div class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Camera-Space_Hand_Mesh_Recovery_via_Semantic_Aggregation_and_Adaptive_2D-1D_CVPR_2021_paper.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">8</div>
+          <div>
+            <div class="pub-meta"><span>TCSVT 2021</span></div>
+            <h3>Joint anchor-feature refinement for real-time accurate object detection in images and videos</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Junzhi Yu, Shihan Kong, Zhengxing Wu, and Li Wen</p>
+            <p class="venue"><em>IEEE Transactions on Circuits and Systems for Video Technology</em>, 2021, 31(2):594-607.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/9037090">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">7</div>
+          <div>
+            <div class="pub-meta"><span>TCYB 2020</span></div>
+            <h3>Temporally identity-aware SSD with attentional LSTM</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Junzhi Yu, and Zhengxing Wu</p>
+            <p class="venue"><em>IEEE Transactions on Cybernetics</em>, 2020, 50(6):2674-2686.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8638831">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">6</div>
+          <div>
+            <div class="pub-meta"><span>TSMC 2020</span></div>
+            <h3>Toward a maneuverable miniature robotic fish equipped with a novel magnetic actuator system</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Junzhi Yu, Zhengxing Wu, Yan Meng, and Shihan Kong</p>
+            <p class="venue"><em>IEEE Transactions on Systems, Man, and Cybernetics: Systems</em>, 2020, 50(7):2327-2337.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8320969">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">5</div>
+          <div>
+            <div class="pub-meta"><span>TIE 2019</span></div>
+            <h3>Towards real-time advancement of underwater visual quality with GAN</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Junzhi Yu, Shihan Kong, Zhengxing Wu, Xi Fang, and Li Wen</p>
+            <p class="venue"><em>IEEE Transactions on Industrial Electronics</em>, 2019, 66(12):9350-9359.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8624564">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">4</div>
+          <div>
+            <div class="pub-meta"><span>ICRA 2019</span></div>
+            <h3>Dual refinement network for single-shot object detection</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Xiyuan Yang, Shihan Kong, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)</em>, 2019, pp. 8305-8310.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8793816">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">3</div>
+          <div>
+            <div class="pub-meta"><span>IROS 2018</span></div>
+            <h3>TSSD: Temporal single-shot detector based on attention and LSTM</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2018, pp. 5758-5763.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8593963">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">2</div>
+          <div>
+            <div class="pub-meta"><span>CYBER 2017</span></div>
+            <h3>A real-time and unsupervised advancement scheme for underwater machine vision</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Zhengxing Wu, Junzhi Yu, and Li Wen</p>
+            <p class="venue">In <em>Proceedings of the IEEE International Conference on CYBER Technology in Automation, Control, and Intelligent Systems</em>, 2017, pp. 271-276. <strong>Best Conference Paper Award.</strong></p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8446363">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">1</div>
+          <div>
+            <div class="pub-meta"><span>IFAC 2017</span></div>
+            <h3>Design and implementation of a magnetically actuated miniature robotic fish</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Zhengxing Wu, Chao Zhou, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the World Congress of International Federation of Automatic Control (IFAC)</em>, 2017, pp. 7045-7050.</p>
+            <div class="paper-links"><a href="https://www.researchgate.net/profile/Xingyu-Chen-25/publication/320496679_Design_and_Implementation_of_a_Magnetically_Actuated_Miniature_Robotic_Fish_This_work_was_supported_by_the_National_Natural_Science_Foundation_of_China_nos_61633020_61603388_61633004_and_61421004_by_t/links/5ab0bf3f0f7e9b4897c2358f/Design-and-Implementation-of-a-Magnetically-Actuated-Miniature-Robotic-Fish-This-work-was-supported-by-the-National-Natural-Science-Foundation-of-China-nos-61633020-61603388-61633004-and-61421004.pdf">PDF</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pub-section" id="co-author" aria-labelledby="co-author-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="co-author-title">Co-Author Publications</h2>
+          <p>Collaborative work across vision, robotics, graphics, and embodied intelligence.</p>
+        </div>
+      </div>
+
+      <div class="pub-list">
+        <article class="pub-item">
+          <div class="pub-index">22</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2026</span></div>
+            <h3>SceneMaker: Open-set 3D Scene Generation with Decoupled De-occlusion and Pose Estimation Model</h3>
+            <p class="authors">Yukai Shi, Weiyu Li, Zihao Wang, Hongyang Li, <strong>Xingyu Chen</strong>, Ping Tan, and Lei Zhang</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2512.10957">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">21</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2026</span></div>
+            <h3>Detect anything via next point prediction</h3>
+            <p class="authors">Qing Jiang, Junan Huo, <strong>Xingyu Chen</strong>, Yuda Xiong, Zhaoyang Zeng, Yihao Chen, Tianhe Ren, Junzhi Yu, and Lei Zhang</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2510.12798">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">20</div>
+          <div>
+            <div class="pub-meta"><span>AAAI 2026</span></div>
+            <h3>SegDINO3D: 3D Instance Segmentation Empowered by Both Image-Level and Object-Level 2D Features</h3>
+            <p class="authors">Jinyuan Qu, Hongyang Li, <strong>Xingyu Chen</strong>, Shilong Liu, Yukai Shi, Tianhe Ren, Ruitao Jing, and Lei Zhang</p>
+            <p class="venue">In <em>Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)</em>, 2026.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2509.16098">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">19</div>
+          <div>
+            <div class="pub-meta"><span>T-ASE 2025</span></div>
+            <h3>Adjusting distributed cameras for robust moving object pose estimation</h3>
+            <p class="authors">Yaoqing Hu, Shaoan Wang, Dongyue Li, <strong>Xingyu Chen</strong>, Mingzhu Zhu, Zhanhua Xin, and Junzhi Yu</p>
+            <p class="venue"><em>IEEE Transactions on Automation Science and Engineering</em>, 2025.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10833659">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">18</div>
+          <div>
+            <div class="pub-meta"><span>TIM 2024</span></div>
+            <h3>Self-supervised underwater image generation for underwater domain pre-training</h3>
+            <p class="authors">Zhiheng Wu, Zhengxing Wu, <strong>Xingyu Chen</strong>, Yue Lu, and Junzhi Yu</p>
+            <p class="venue"><em>IEEE Transactions on Instrumentation and Measurement</em>, 2024.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/10458951/">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">17</div>
+          <div>
+            <div class="pub-meta"><span>CVPR 2024</span></div>
+            <h3>Learning one-shot 4D head avatar synthesis using synthetic data</h3>
+            <p class="authors">Yu Deng, Duoming Wang, Xiaohang Ren, <strong>Xingyu Chen</strong>, and Baoyuan Wang</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2311.18729">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">16</div>
+          <div>
+            <div class="pub-meta"><span>TMM 2023</span></div>
+            <h3>Binary similarity few-shot object detection with modeling of hard negative samples</h3>
+            <p class="authors">Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Min Tan, and Junzhi Yu</p>
+            <p class="venue"><em>IEEE Transactions on Multimedia</em>, 2023.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/10298598">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">15</div>
+          <div>
+            <div class="pub-meta"><span>TMech 2023</span></div>
+            <h3>An underwater robotic system with a soft continuum manipulator for autonomous aquatic grasping</h3>
+            <p class="authors">Jiaqi Liu, Zhuheng Song, Yue Lu, Hui Yang, <strong>Xingyu Chen</strong>, Youning Duo, Bohan Chen, Shihan Kong, Zhuyin Shao, Zheyuan Gong, Shiqiang Wang, Xilun Ding, Junzhi Yu, and Li Wen</p>
+            <p class="venue"><em>IEEE/ASME Transactions on Mechatronics</em>, 2023.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/10294235">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">14</div>
+          <div>
+            <div class="pub-meta"><span>TIP 2023</span></div>
+            <h3>HybrUR: A hybrid physical-neural solution for unsupervised underwater image restoration</h3>
+            <p class="authors">Shuaizheng Yan, <strong>Xingyu Chen</strong>, Zhengxing Wu, Min Tan, and Junzhi Yu</p>
+            <p class="venue"><em>IEEE Transactions on Image Processing</em>, 2023, 32:5004-5016.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2107.02660.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">13</div>
+          <div>
+            <div class="pub-meta"><span>ICCV 2023</span></div>
+            <h3>Reinforced disentanglement for face swapping without skip connection</h3>
+            <p class="authors">Xiaohang Ren, <strong>Xingyu Chen</strong>, Pengfei Yao, Heung-Yeung Shum, and Baoyuan Wang</p>
+            <p class="venue">In <em>Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2023, pp. 20665-20675.</p>
+            <div class="paper-links"><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Ren_Reinforced_Disentanglement_for_Face_Swapping_without_Skip_Connection_ICCV_2023_paper.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">12</div>
+          <div>
+            <div class="pub-meta"><span>TCYB 2023</span></div>
+            <h3>Decoupled metric network for single-stage few-shot object detection</h3>
+            <p class="authors">Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue"><em>IEEE Transactions on Cybernetics</em>, 2023, 53(1):514-525.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/9721820">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">11</div>
+          <div>
+            <div class="pub-meta"><span>ECCV 2022</span></div>
+            <h3>UC-OWOD: Unknown-Classified Open World Object Detection</h3>
+            <p class="authors">Zhiheng Wu, Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Liwen Kang, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the European Conference on Computer Vision (ECCV)</em>, 2022, pp. 193-210.</p>
+            <div class="paper-links"><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700191.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">10</div>
+          <div>
+            <div class="pub-meta"><span>ACM MM 2022</span></div>
+            <h3>CycleHand: Increasing 3D pose estimation ability on in-the-wild monocular image through cyclic flow</h3>
+            <p class="authors">Daiheng Gao, Xindi Zhang, <strong>Xingyu Chen</strong>, Andong Tan, Bang Zhang, Pan Pan, and Ping Tan</p>
+            <p class="venue">In <em>Proceedings of the ACM Multimedia Conference (ACM MM)</em>, 2022, pp. 2452-2463.</p>
+            <div class="paper-links"><a href="https://dl.acm.org/doi/pdf/10.1145/3503161.3547828?casa_token=Te6rOUl1CPQAAAAA:EQMJZVl3sgtPO3apPFM0-ofCYi6G78dXjMpV51PxUvpk6ne8M7hA4YbHawGb5vL2lKoafqJoxefrHr0">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">9</div>
+          <div>
+            <div class="pub-meta"><span>FITEE 2022</span></div>
+            <h3>A novel robotic visual perception framework for underwater operation</h3>
+            <p class="authors">Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Junzhi Yu, and Li Wen</p>
+            <p class="venue"><em>Frontiers of Information Technology &amp; Electronic Engineering</em>, 2022, 23(11):1602-1619.</p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">8</div>
+          <div>
+            <div class="pub-meta"><span>IJIRA 2021</span></div>
+            <h3>Prediction model-based learning adaptive control for underwater grasping of a soft manipulator</h3>
+            <p class="authors">Hui Yang, Jiaqi Liu, Xi Fang, <strong>Xingyu Chen</strong>, Zheyuan Gong, Shiqiang Wang, Shihan Kong, Junzhi Yu, and Li Wen</p>
+            <p class="venue"><em>International Journal of Intelligent Robotics and Applications</em>, 2021, 5:337-353.</p>
+            <div class="paper-links"><a href="https://www.researchgate.net/profile/Shiqiang-Wang-9/publication/354353343_Prediction_model-based_learning_adaptive_control_for_underwater_grasping_of_a_soft_manipulator/links/6213675c6c472329dcfa8ea0/Prediction-model-based-learning-adaptive-control-for-underwater-grasping-of-a-soft-manipulator.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">7</div>
+          <div>
+            <div class="pub-meta"><span>IJRR 2021</span></div>
+            <h3>A soft manipulator for efficient delicate grasping in shallow water: Modelling, control, and real-world experiments</h3>
+            <p class="authors">Zheyuan Gong, Xi Fang, <strong>Xingyu Chen</strong>, Jiahui Cheng, Zhexin Xie, Jiaqi Liu, Bohan Chen, Hui Yang, Shihan Kong, Yufei Hao, Tianmiao Wang, Junzhi Yu, and Li Wen</p>
+            <p class="venue"><em>International Journal of Robotics Research</em>, 2021, 40(1):449-469.</p>
+            <div class="paper-links"><a href="https://journals.sagepub.com/doi/pdf/10.1177/0278364920917203">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">6</div>
+          <div>
+            <div class="pub-meta"><span>TIM 2019</span></div>
+            <h3>A NSGA-II-based calibration algorithm for underwater binocular vision measurement system</h3>
+            <p class="authors">Shihan Kong, Xi Fang, <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue"><em>IEEE Transactions on Instrumentation and Measurement</em>, 2019, 69(3):794-803.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/8692612">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">5</div>
+          <div>
+            <div class="pub-meta"><span>RCAR 2019</span></div>
+            <h3>A vision-based path planning and following system for a miniature robotic fish</h3>
+            <p class="authors">Yue Lu, <strong>Xingyu Chen</strong>, Zhengxing Wu, Yan Yan, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the IEEE International Conference on Real-Time Computing and Robotics</em>, 2019, pp. 408-413.</p>
+            <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/9044020">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">4</div>
+          <div>
+            <div class="pub-meta"><span>CCC 2019</span></div>
+            <h3>An unsupervised grasp detection for water-surface object collection</h3>
+            <p class="authors">Shihan Kong, <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the Chinese Control Conference</em>, 2019, pp. 4421-4426.</p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">3</div>
+          <div>
+            <div class="pub-meta"><span>JBE 2018</span></div>
+            <h3>A bio-inspired soft robotic arm: Kinematic modeling and hydrodynamic experiments</h3>
+            <p class="authors">Zheyuan Gong, Jiahui Cheng, <strong>Xingyu Chen</strong>, Wenguang Sun, Xi Fang, Kainan Hu, Zhexin Xie, Tianmiao Wang, and Li Wen</p>
+            <p class="venue"><em>Journal of Bionic Engineering</em>, 2018, 15(2):204-219. <strong>Highly Cited Research Paper.</strong></p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">2</div>
+          <div>
+            <div class="pub-meta"><span>JBE 2018</span></div>
+            <h3>Energy analysis of a CPG-controlled miniature robotic fish</h3>
+            <p class="authors">Junzhi Yu, Shifeng Chen, Zhengxing Wu, <strong>Xingyu Chen</strong>, and Min Wang</p>
+            <p class="venue"><em>Journal of Bionic Engineering</em>, 2018, 15(2):260-269.</p>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">1</div>
+          <div>
+            <div class="pub-meta"><span>CCDC 2018</span></div>
+            <h3>A real-time underwater robotic visual tracking strategy based on image restoration and kernelized correlation filters</h3>
+            <p class="authors">Shihan Kong, Xi Fang, <strong>Xingyu Chen</strong>, Zhengxing Wu, and Junzhi Yu</p>
+            <p class="venue">In <em>Proceedings of the Chinese Control and Decision Conference</em>, 2018, pp. 6436-6441.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pub-section" id="reports" aria-labelledby="reports-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="reports-title">Technical Reports</h2>
+          <p>Preprints and research reports.</p>
+        </div>
+      </div>
+
+      <div class="pub-list">
+        <article class="pub-item">
+          <div class="pub-index">2</div>
+          <div>
+            <div class="pub-meta"><span>arXiv 2020</span></div>
+            <h3>Reveal of domain effect: How visual restoration contributes to object detection in aquatic scenes</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Yue Lu, Zhengxing Wu, Junzhi Yu, and Li Wen</p>
+            <p class="venue"><em>arXiv</em>, 2020.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/2003.01913.pdf">PDF</a></div>
+          </div>
+        </article>
+
+        <article class="pub-item">
+          <div class="pub-index">1</div>
+          <div>
+            <div class="pub-meta"><span>arXiv 2019</span></div>
+            <h3>Rethinking temporal object detection from robotic perspectives</h3>
+            <p class="authors"><strong>Xingyu Chen</strong>, Junzhi Yu, and Zhengxing Wu</p>
+            <p class="venue"><em>arXiv</em>, 2019.</p>
+            <div class="paper-links"><a href="https://arxiv.org/pdf/1912.10406.pdf">PDF</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pub-section" id="book" aria-labelledby="book-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="book-title">Book</h2>
+          <p>Long-form publication.</p>
+        </div>
+      </div>
+
+      <div class="pub-list">
+        <article class="pub-item">
+          <div class="pub-index">1</div>
+          <div>
+            <div class="pub-meta"><span>Book 2021</span></div>
+            <h3>Visual Perception and Control of Underwater Robots</h3>
+            <p class="authors">Junzhi Yu, <strong>Xingyu Chen</strong>, and Shihan Kong</p>
+            <p class="venue">ISBN: 9781000346596, Mar. 2021.</p>
+            <div class="paper-links"><a href="https://www.amazon.com/Visual-Perception-Control-Underwater-Robots-dp-0367695782/dp/0367695782/ref=mt_other?_encoding=UTF8&me=&qid=">Book</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Back to <a href="index.html">Xingyu Chen's homepage</a>.</p>
+  </footer>
 </body>
-
 </html>
